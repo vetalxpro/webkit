@@ -1,0 +1,57 @@
+doctype html
+html
+
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        block title
+            title Page Title
+        //SEO
+        meta(name='description' content='homework')
+        meta(name='keywords' content='loftschool')
+        meta(name='author' content='gomer')
+        //Adaptive
+        meta(name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0")
+        //favicon
+        link(rel='shortcut icon' href='homer.ico' type='image/x-icon')
+        link(rel='icon' href='homer.ico' type='image/x-icon')
+        //bower CSS
+        block vendor-styles
+        //build:css css/vendor.css
+
+        //bower:css
+        //endbower
+
+        //endbuild
+        //CSS
+        //build:css css/main.css
+        block main-styles
+        //endbuild
+
+
+    body
+        <!--[if lt IE 7]>
+        p.browsehappy
+            | Вы используете #[strong устаревший] браузер.
+            | Пожалуйста
+            a(href='browsehappy.com') &nbsp;обновите&nbsp;
+            | его.
+        <![endif]-->
+
+        block content
+
+        block footer
+
+        //build:js js/vendor.js
+
+        //bower:js
+        //endbower
+
+        //endbuild
+
+        //build:js js/main.js
+        block main-scripts
+        //endbuild
+
+
+

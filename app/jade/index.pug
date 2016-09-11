@@ -1,0 +1,26 @@
+extends layouts/_layout
+
+block title
+    title Title
+
+block main-styles
+
+    link(rel='stylesheet' href='css/style.css')
+
+
+block main-scripts
+
+    script(src='scripts/script.js')
+
+
+
+block content
+    .wrapper
+        include templates/_header
+        include templates/_main
+
+
+block footer
+    include templates/_footer
+
+
